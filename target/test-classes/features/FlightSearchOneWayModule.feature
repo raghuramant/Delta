@@ -1,5 +1,5 @@
 Feature: Flight Booking for One-Way 
-
+@tag1 @run
 Scenario: 
 	Booking One-way flight for an adult with exact travel date in Basic Economy Class without trip extras
 	
@@ -11,7 +11,7 @@ Scenario:
 	And User enters the personal info and skips to the payment without adding trip extras 
 	
 	Then User verifies whether the text Payment is displayed or not 
-	
+@tag2	
 Scenario: 
 	Booking One-way flight for an adult with exact travel date in Basic Economy Class with trip extras
 	
@@ -24,7 +24,7 @@ Scenario:
 	
 	Then User verifies whether the text Payment is displayed or not 
 	
-	
+@tag3	
 Scenario: 
 	Booking One-way flight for an adult with flexible travel date in Basic Economy Class without trip extras
 	
@@ -36,7 +36,7 @@ Scenario:
 	And User enters the personal info and skips to the payment without adding trip extras 
 	
 	Then User verifies whether the text Payment is displayed or not 
-	
+@tag4	
 Scenario: 
 	Booking One-way flight for an adult with flexible travel date in Basic Economy Class with trip extras
 	
@@ -48,7 +48,7 @@ Scenario:
 	And User enters the personal info, navigates to Trip Extras to include addons and proceeds to the payment page 
 	
 	Then User verifies whether the text Payment is displayed or not
-	
+	@tag5
 	Scenario: 
 	Booking One-way flight for a kid having age less than 15 years with exact travel date in Basic Economy Class without Trip Extras
 	
@@ -60,7 +60,7 @@ Scenario:
 	And User enters the personal info
 	
 	Then User verifies whether the warning message is displayed or not
-	
+	@tag6
 	Scenario: 
 	Booking One-way flight for multiple passengers with exact travel date in Basic Economy Class without trip extras
 	
@@ -72,7 +72,7 @@ Scenario:
 	And User enters the personal info of the passengers and skips to the payment without adding trip extras 
 	
 	Then User verifies whether the text Payment is displayed or not 
-	
+	@tag7
 	Scenario: 
 	Booking One-way flight for multiple passengers with exact travel date in Basic Economy Class with trip extras
 	
@@ -85,7 +85,7 @@ Scenario:
 	
 	Then User verifies whether the text Payment is displayed or not 
 	
-	
+@tag8	
 Scenario: 
 	Booking One-way flight for multiple passengers with flexible travel date in Basic Economy Class without trip extras
 	
@@ -97,7 +97,7 @@ Scenario:
 	And User enters the personal info of the passengers  and skips to the payment without adding trip extras 
 	
 	Then User verifies whether the text Payment is displayed or not 
-	
+@tag9	
 Scenario: 
 	Booking One-way flight for multiple passengers with flexible travel date in Basic Economy Class with trip extras
 	

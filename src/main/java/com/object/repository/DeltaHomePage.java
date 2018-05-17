@@ -1,5 +1,6 @@
 package com.object.repository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -44,8 +45,11 @@ public class DeltaHomePage extends Utilities{
 	@FindBy(id="findFlightsSubmit")
 	private WebElement findFlightsBtn;
 	
-	@FindBy(id="paxCount")
-	private WebElement passengersDrpDwn;
+	@FindBy(id="paxCount-button")
+	private WebElement dropdwnIcon_PaxCount;
+	
+	@FindBy(id="paxCount-menu")
+	private By paxCountMenu;
 	
 	@FindBy(id="ck-banner-close")
 	private WebElement cookieBannerClose;
@@ -56,96 +60,65 @@ public class DeltaHomePage extends Utilities{
 		return roundTripBtn;
 	}
 
-	public void setRoundTripBtn(WebElement roundTripBtn) {
-		this.roundTripBtn = roundTripBtn;
-	}
 
 	public WebElement getOneWayBtn() {
 		return oneWayBtn;
 	}
 
-	public void setOneWayBtn(WebElement oneWayBtn) {
-		this.oneWayBtn = oneWayBtn;
-	}
 
 	public WebElement getMultiCityBtn() {
 		return multiCityBtn;
 	}
 
-	public void setMultiCityBtn(WebElement multiCityBtn) {
-		this.multiCityBtn = multiCityBtn;
-	}
 
 	public WebElement getOriginCityTxtBx() {
 		return originCityTxtBx;
 	}
 
-	public void setOriginCityTxtBx(WebElement originCityTxtBx) {
-		this.originCityTxtBx = originCityTxtBx;
-	}
 
 	public WebElement getDestinationCityTxtBx() {
 		return destinationCityTxtBx;
 	}
 
-	public void setDestinationCityTxtBx(WebElement destinationCityTxtBx) {
-		this.destinationCityTxtBx = destinationCityTxtBx;
-	}
 
 	public WebElement getDepartDateTxtBx() {
 		return departDateTxtBx;
 	}
 
-	public void setDepartDateTxtBx(WebElement departDateTxtBx) {
-		this.departDateTxtBx = departDateTxtBx;
-	}
 
 	public WebElement getReturnDateTxtBx() {
 		return returnDateTxtBx;
 	}
 
-	public void setReturnDateTxtBx(WebElement returnDateTxtBx) {
-		this.returnDateTxtBx = returnDateTxtBx;
-	}
 
 	public WebElement getExactDatesBtn() {
 		return exactDatesBtn;
 	}
 
-	public void setExactDatesBtn(WebElement exactDatesBtn) {
-		this.exactDatesBtn = exactDatesBtn;
-	}
 
 	public WebElement getFlexibleDaysBtn() {
 		return flexibleDaysBtn;
 	}
 
-	public void setFlexibleDaysBtn(WebElement flexibleDaysBtn) {
-		this.flexibleDaysBtn = flexibleDaysBtn;
-	}
 
 	public WebElement getFindFlightsBtn() {
 		return findFlightsBtn;
 	}
 
-	public void setFindFlightsBtn(WebElement findFlightsBtn) {
-		this.findFlightsBtn = findFlightsBtn;
-	}
 	
-	public WebElement getPassengersDrpDwn() {
-		return passengersDrpDwn;
-	}
-
-	public void setPassengersDrpDwn(WebElement passengersDrpDwn) {
-		this.passengersDrpDwn = passengersDrpDwn;
-	}
-
 	public WebElement getCookieBannerClose() {
 		return cookieBannerClose;
 	}
 
-	public void setCookieBannerClose(WebElement cookieBannerClose) {
-		this.cookieBannerClose = cookieBannerClose;
+
+	public WebElement getDropdwnIcon_PaxCount() {
+		return dropdwnIcon_PaxCount;
 	}
+
+
+	public By getPaxCountMenu() {
+		return paxCountMenu;
+	}
+
 	
 }
